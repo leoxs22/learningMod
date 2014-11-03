@@ -1,0 +1,17 @@
+[
+{
+  "modid": "LearningMod",
+  "name": "Learning Mod",
+  "description": "I'm learning to mod",
+  "version": "0.1",
+  "credits": "Created by LordFenix56",
+  "logoFile": "",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["LordFenix56"],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": []
+}
+]
