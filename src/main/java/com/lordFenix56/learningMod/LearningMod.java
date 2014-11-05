@@ -1,5 +1,6 @@
 package com.lordFenix56.learningMod;
 
+import com.lordFenix56.learningMod.configuration.ConfigurationHandler;
 import com.lordFenix56.learningMod.proxy.IProxy;
 import com.lordFenix56.learningMod.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -23,7 +24,7 @@ public class LearningMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
     @Mod.EventHandler
     public void init (FMLInitializationEvent event)
