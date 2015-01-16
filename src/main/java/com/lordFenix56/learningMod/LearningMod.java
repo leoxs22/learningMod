@@ -1,8 +1,10 @@
 package com.lordFenix56.learningMod;
 
+import com.lordFenix56.learningMod.client.handler.KeyInputEventHandler;
 import com.lordFenix56.learningMod.handler.ConfigurationHandler;
 import com.lordFenix56.learningMod.init.ModBlocks;
 import com.lordFenix56.learningMod.init.ModItems;
+import com.lordFenix56.learningMod.init.Recipes;
 import com.lordFenix56.learningMod.proxy.IProxy;
 import com.lordFenix56.learningMod.reference.Reference;
 import com.lordFenix56.learningMod.utility.LogHelper;
@@ -30,8 +32,11 @@ public class LearningMod {
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
-        FMLCommonHandler.instance().bus().register((new ConfigurationHandler()));
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
         LogHelper.info("Pre Initialization Complete");
+
+        proxy.registerKeyBindings();
 
         ModItems.init();
 
@@ -40,6 +45,8 @@ public class LearningMod {
     @Mod.EventHandler
     public void init (FMLInitializationEvent event)
     {
+        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+        Recipes.init();
         LogHelper.info("Initialization Complete");
     }
     @Mod.EventHandler

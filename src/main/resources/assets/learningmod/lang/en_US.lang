@@ -1,3 +1,17 @@
+#Keys
+keys.learningmod.category=Learning Mod
+keys.learningmod.charge=Charge
+keys.learningmod.release=Release
+
+#Creative Tabs
+itemGroup.learningmod=Learning Mod
+
+#Items
 item.learningmod:mapleLeaf.name=Maple Leaf of Awesomeness
 item.learningmod:turroDestructor.name=Espada Aniquiladora de Turros <no apunte a la cara>
+item.learningmod:eggplant.name=Berenjena
+
+#Blocks
 tile.learningmod:flag.name=Canadian Flag of Awesomeness
+tile.learningmod:compressedEggplant.name=Berenjena Comprimida
+
