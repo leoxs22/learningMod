@@ -10,5 +10,7 @@ public class BlockCompressedEggplant extends BlockLM
         super();
         this.setBlockName("compressedEggplant");
         this.setBlockTextureName("compressedEggplant");
+        this.setHardness(4.0F);
+
     }
 }
